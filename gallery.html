@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-bar">Gallery</div>
+
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="gallery.html" class="active">Gallery</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="gallery">
+  <a href="#foto1" class="gallery-item">
+    <img src="images/foto1.jpg" alt="A L’ AISE" class="thumb hidden">
+    <div class="overlay"><span>A L’ AISE</span></div>
+  </a>
+  <a href="#foto2" class="gallery-item">
+    <img src="images/foto2.jpg" alt="Bukit Doa Warembungan" class="thumb hidden">
+    <div class="overlay"><span>BUKIT DOA WAREMBUNGAN</span></div>
+  </a>
+  <a href="#foto3" class="gallery-item">
+    <img src="images/foto3.jpg" alt="Cafe Koel" class="thumb hidden">
+    <div class="overlay"><span>CAFE KOEL</span></div>
+  </a>
+</div>
+
+<!-- Modal Foto -->
+<div id="foto1" class="modal">
+  <a href="#" class="close">&times;</a>
+  <img src="images/foto1.jpg" class="modal-content small">
+</div>
+<div id="foto2" class="modal">
+  <a href="#" class="close">&times;</a>
+  <img src="images/foto2.jpg" class="modal-content small">
+</div>
+<div id="foto3" class="modal">
+  <a href="#" class="close">&times;</a>
+  <img src="images/foto3.jpg" class="modal-content small">
+</div>
+
+<p class="caption hidden">Beberapa foto pribadi saya</p>
+
+<div class="gallery hidden">
+  <!-- Tempat 1 -->
+  <div class="gallery-item">
+    <div class="place-card">
+      <h3 class="place-name">A L’ AISE</h3>
+      <div class="details">
+        <a href="https://www.google.com/maps/place/A+L'AISE+Cafe" target="_blank">Google Maps</a> | 
+        <a href="https://www.alaise.art/" target="_blank">Detail Artikel</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tempat 2 -->
+  <div class="gallery-item">
+    <div class="place-card">
+      <h3 class="place-name">BUKIT DOA WAREMBUNGAN</h3>
+      <div class="details">
+        <a href="https://www.google.com/maps/place/Bukit+Doa+Warembungan" target="_blank">Google Maps</a> | 
+        <a href="https://www.cakraloka.com/bukit-doa-warembungan-surga-tersembunyi-di-kota-manado/" target="_blank">Detail Artikel</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tempat 3 -->
+  <div class="gallery-item">
+    <div class="place-card">
+      <h3 class="place-name">CAFE KOEL</h3>
+      <div class="details">
+        <a href="https://www.google.com/maps/place/Cafe+Koel" target="_blank">Google Maps</a> | 
+        <a href="https://www.instagram.com/koel.manado/?hl=id" target="_blank">Detail Artikel</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Tombol trigger -->
+<button id="showGallery">Tampilkan Gallery</button>
+
+
+<!-- Hubungkan script -->
+<script src="script.js"></script>
+</body>
+</html>
